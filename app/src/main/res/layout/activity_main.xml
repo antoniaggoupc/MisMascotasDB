@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!-- Load the toolbar here
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/action_view"
+
+        />
+-->
+
+    <!-- Rest of content for the activity -->
+    <!-- AppBar
+        Un AppBarLayout que contiene tanto:
+        la Toolbar que hará de ActionBar de la app
+        como el componente TabLayout responsable de mostrar las pestañas.
+        AppBarLayout es un tipo de LinearLayout utilizado para dar un aspecto
+        y comportamiento unificado a los widgets empleados para diseñar una AppBar
+     -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/fragment_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways|snap">
+
+            <ImageView
+                android:id="@+id/imv_fingerprint"
+                android:layout_width="50sp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/icons8_cat_footprint_24" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/app_name"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:id="@+id/imv_star"
+                android:layout_width="50sp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="end"
+                android:layout_marginStart="@dimen/action_view_star_layout_marginLeft"
+                android:layout_marginEnd="67dp"
+                android:layout_marginRight="67dp"
+                android:clickable="true"
+                android:contentDescription="@string/star_content"
+                android:focusable="true"
+                android:src="@drawable/icons8_estrella_96" />
+
+            />
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            app:tabGravity="fill"
+            app:tabMode="scrollable"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+    <!-- ViewPager2 is an improved version of the ViewPager
+       https://developer.android.com/develop/ui/views/animations/vp2-migration
+       -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+
+
+</LinearLayout>

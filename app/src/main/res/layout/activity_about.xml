@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity"
+    tools:ignore="HardcodedText"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/lyTitleAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/tvTitleAbout"
+            style="@style/Rounded"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:minWidth="@dimen/tvMinWidth"
+            android:minHeight ="@dimen/tvMinHeight"
+            android:layout_marginStart="@dimen/margen_start_layout"
+            android:layout_marginEnd="@dimen/margen_end_layout"
+            android:layout_marginTop="@dimen/margen_arriba_layout"
+            app:boxCornerRadiusTopEnd="@dimen/corner_radius_formulario"
+            app:boxCornerRadiusTopStart="@dimen/corner_radius_formulario"
+            app:boxCornerRadiusBottomStart="@dimen/corner_radius_formulario"
+            app:boxCornerRadiusBottomEnd="@dimen/corner_radius_formulario"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/tvTextSizeTitleAbout"
+            android:textColor="@color/purple_200"
+            android:text="@string/tvTitleAbout"/>
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lyTxtAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lyTitleAbout"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_gravity="center">
+        <TextView
+            android:id="@+id/tvAbout"
+            style="@style/Rounded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/margen_start_layout"
+            android:layout_marginTop="@dimen/margen_arriba_layout"
+            android:layout_marginEnd="@dimen/margen_end_layout"
+            android:clickable="false"
+            android:focusable="false"
+            android:minWidth="@dimen/tietMinWidth"
+            android:minHeight="@dimen/tietMinHeight"
+            android:text="@string/textAbout"
+            app:boxCornerRadiusBottomEnd="@dimen/corner_radius_formulario"
+            app:boxCornerRadiusBottomStart="@dimen/corner_radius_formulario"
+            app:boxCornerRadiusTopEnd="@dimen/corner_radius_formulario"
+            app:boxCornerRadiusTopStart="@dimen/corner_radius_formulario" />
+
+    </LinearLayout>
+
+</RelativeLayout>

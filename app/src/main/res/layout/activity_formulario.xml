@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Formulario_Activity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNombreFormulario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margen_arriba_layout"
+        app:boxCornerRadiusTopEnd="@dimen/corner_radius_formulario"
+        app:boxCornerRadiusTopStart="@dimen/corner_radius_formulario"
+        app:boxCornerRadiusBottomStart="@dimen/corner_radius_formulario"
+        app:boxCornerRadiusBottomEnd="@dimen/corner_radius_formulario"
+        app:boxBackgroundMode="outline">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietNombreFormulario"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margen_arriba_layout"
+            android:layout_marginStart="@dimen/margen_start_layout"
+            android:layout_marginEnd="@dimen/margen_end_layout"
+            android:clickable="true"
+            android:focusable="true"
+            android:elegantTextHeight="true"
+            android:hint="@string/name_hint"
+            android:minWidth="@dimen/tietMinWidth"
+            android:minHeight="@dimen/tietMinHeight"
+            android:orientation="horizontal"
+            android:textColorHint="@color/sugestedHint"
+            tools:ignore="TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/lyMailFormulario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilEmailFormulario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/tietMinWidth"
+            android:minHeight="@dimen/tietMinHeight"
+            android:layout_marginTop="@dimen/margen_arriba_layout"
+            app:boxCornerRadiusTopEnd="@dimen/corner_radius_formulario"
+            app:boxCornerRadiusTopStart="@dimen/corner_radius_formulario"
+            app:boxCornerRadiusBottomStart="@dimen/corner_radius_formulario"
+            app:boxCornerRadiusBottomEnd="@dimen/corner_radius_formulario"
+            app:boxBackgroundMode="outline"
+            android:layout_gravity="center">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietEmailFormulario"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="@dimen/tietMinWidth"
+                android:minHeight ="@dimen/tietMinHeight"
+                android:layout_marginTop="@dimen/margen_arriba_layout"
+                android:layout_marginStart="@dimen/margen_start_layout"
+                android:layout_marginEnd="@dimen/margen_end_layout"
+                android:layout_gravity="center"
+                android:elegantTextHeight="true"
+                android:focusable="true"
+                android:clickable="true"
+                android:maxLines="1"
+                android:textColorHint="@color/sugestedHint"
+                android:hint="@string/email_hint"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lyMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="false"
+        android:focusable="false">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/tietMinWidth"
+            android:minHeight ="@dimen/tietMinHeight"
+            android:layout_marginTop="@dimen/margen_arriba_layout"
+            android:layout_marginStart="@dimen/margen_start_layout"
+            android:layout_marginEnd="@dimen/margen_end_layout"
+            app:boxCornerRadiusTopEnd="@dimen/corner_radius_formulario"
+            app:boxCornerRadiusTopStart="@dimen/corner_radius_formulario"
+            app:boxCornerRadiusBottomStart="@dimen/corner_radius_formulario"
+            app:boxCornerRadiusBottomEnd="@dimen/corner_radius_formulario"
+            app:boxBackgroundMode="outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietMensaje"
+                style="@style/Rounded"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mensaje_size_formulario"
+                android:layout_marginTop="@dimen/margen_arriba_layout"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:clickable="true"
+                android:maxLines="15"
+                android:textColorHint="@color/sugestedHint"
+                android:hint="@string/mensaje_hint"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_enviar_comentario"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_marginTop="@dimen/margen_arriba_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/btn_margen_start_layout"
+        android:layout_marginEnd="@dimen/btn_margen_end_layout"
+        android:clickable="true"
+        android:focusable="true"
+        android:textSize="@dimen/button_enviar_comentario_text_size_formulario"
+
+        android:text="@string/button_enviar"/>
+
+</LinearLayout>

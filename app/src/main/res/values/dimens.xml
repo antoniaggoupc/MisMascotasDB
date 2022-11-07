@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- action_view_layout.xml -->
+    <dimen name="text_size">10sp</dimen>
+    <dimen name="action_view_layout_width">80sp</dimen>
+    <dimen name="action_view_star_layout_marginRight">70sp</dimen>
+    <dimen name="action_view_star_layout_marginLeft">10sp</dimen>
+    <dimen name="action_view_footfinger_layout_marginLeft">10sp</dimen>
+    <dimen name="marginToolbar">15sp</dimen>
+
+
+    <!-- activity_main.xml y activity_card_view_mascota.xml -->
+
+    <dimen name="activity_vertical_cardview_margin">16sp</dimen>
+
+    <dimen name="corner_radius_cardview">4sp</dimen>
+    <dimen name="margen_arriba_layout">5sp</dimen>
+    <dimen name="activity_cardview_layout_height_image">100sp</dimen>
+    <dimen name="activity_cardview_items_layout_barra">50sp</dimen>
+    <dimen name="activity_cardview_items_layout_height">50sp</dimen>
+    <dimen name="activity_cardview_items_layout_margin">10sp</dimen>
+    <dimen name="activity_cardview_items_padding">5sp</dimen>
+    <dimen name="activity_cardview_text_size">10sp</dimen>
+    <dimen name="activity_cardview_img_size">30sp</dimen>
+
+
+    <dimen name="elevation_action_bar">4sp</dimen>
+
+    <!-- activity_formulario.xml -->
+
+    <dimen name="margen_arriba_layout_formulario">20sp</dimen>
+    <dimen name="corner_radius_formulario">20sp</dimen>
+    <dimen name="mensaje_size_formulario">250sp</dimen>
+    <dimen name="button_enviar_comentario_text_size_formulario">10sp</dimen>
+    <dimen name="tietMinWidth">40sp</dimen>
+    <dimen name="tietMinHeight">40sp</dimen>
+    <dimen name="tvMinWidth">20sp</dimen>
+    <dimen name="tvMinHeight">50sp</dimen>
+    <dimen name="margen_start_layout">32sp</dimen>
+    <dimen name="margen_end_layout">32sp</dimen>
+    <dimen name="btn_margen_start_layout">60sp</dimen>
+    <dimen name="btn_margen_end_layout">60sp</dimen>
+    <dimen name="tvLayoutHeight">50sp</dimen>
+    <dimen name="tvTextSizeTitleAbout">25sp</dimen>
+
+
+</resources>

@@ -1,0 +1,80 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvContacto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_cardview_margin"
+    app:cardCornerRadius="@dimen/corner_radius_cardview">
+
+    <LinearLayout
+        android:id="@+id/ll_cv_total"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/margen_arriba_layout">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_foto_CV"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_cardview_layout_height_image"
+            android:src="@drawable/icons8_parrot_96"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_cv_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_cardview_items_layout_barra"
+            android:layout_below="@id/img_foto_CV"
+            android:layout_gravity="clip_horizontal"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginTop="0dp"
+            android:padding="@dimen/margen_arriba_layout">
+
+            <ImageView
+                android:id="@+id/btn_like_CV"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/activity_cardview_items_layout_height"
+                android:layout_margin="@dimen/activity_cardview_items_layout_margin"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/activity_cardview_items_padding"
+                android:src="@drawable/icons8_dog_bone_24" />
+            <TextView
+                android:id="@+id/pet_nombre_CV"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/activity_cardview_items_layout_height"
+                android:layout_margin="@dimen/activity_cardview_items_layout_margin"
+                android:padding="@dimen/activity_cardview_items_padding"
+                android:text="@string/nombre"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_cardview_text_size"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/likes_CV"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/activity_cardview_items_layout_height"
+                android:layout_margin="@dimen/activity_cardview_items_layout_margin"
+                android:padding="@dimen/activity_cardview_items_padding"
+                android:text="@string/likesnumber"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_cardview_text_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img_bone_dog_color_CV"
+                android:layout_width="@dimen/activity_cardview_img_size"
+                android:layout_height="@dimen/activity_cardview_items_layout_height"
+                android:layout_margin="@dimen/activity_cardview_items_layout_margin"
+                android:background="@drawable/icons8_dog_bone_96_color"
+                android:padding="@dimen/activity_cardview_items_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:scaleType="centerCrop" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
